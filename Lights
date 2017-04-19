@@ -1,0 +1,28 @@
+// First I will create an object for the Jarvis server to control
+public class Lights {
+
+private boolean on;
+String color;
+			// This will tell us the color of the bulb
+		
+Lights(){
+	// This will be our DEFAULT light
+			
+		on = false;
+				// This is our light's default state - off
+		color = "Blue";
+				// This is our light's default color
+		}
+		// The following are my mutator (setter) methods, which allow the user to input new values for our private data fields without changing our default
+		
+		public void lightsOn(){
+			on = true;
+			// This tells Java to allow a change in the light's default state of OFF
+		}
+		public void lightsOff(){
+			on = false;
+			// This tells Java to allow a change in the light's default state of OFF (in this case, remaining OFF)
+		}
+	
+	
+}
