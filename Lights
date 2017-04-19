@@ -23,6 +23,16 @@ Lights(){
 			on = false;
 			// This tells Java to allow a change in the light's default state of OFF (in this case, remaining OFF)
 		}
-	
+			
+		public String toString() {
+			if (on == true){
+				return "The lights are on!";
+		}
+			else{
+				return  "The lights are off!";
 	
 }
+}
+}
+	
+
