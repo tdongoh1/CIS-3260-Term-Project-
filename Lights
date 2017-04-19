@@ -23,6 +23,9 @@ Lights(){
 			on = false;
 			// This tells Java to allow a change in the light's default state of OFF (in this case, remaining OFF)
 		}
+		public void setColor (String newColor){
+		color = newColor;
+		}
 			
 		public String toString() {
 			if (on == true){
