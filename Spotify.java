@@ -7,7 +7,6 @@
 		if(genre.equalsIgnoreCase("pop")){
 			System.out.println("Now playing pop station!");
 		}
-
 		else if(genre.equalsIgnoreCase("rock")){
 				System.out.println("Now playing rock station!");
 		}
@@ -15,7 +14,10 @@
 			System.out.println("Now playing country station!");
 		}
 		else if(genre.equalsIgnoreCase("alternative")){
-			System.out.println("alternative music is now playing!");
+			System.out.println("Now playing alternative station!!");
+		}
+		else if(genre.equalsIgnoreCase("rap")){
+			System.out.println("Now playing rap station!");
 		}
 		else {
 		System.out.println("I could not find " +genre +" on Spotify!");
