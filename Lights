@@ -1,3 +1,6 @@
+// ** THE OTHER LIGHTS.JAVA IS THE CORRECT LIGHTS.JAVA. THIS ONE IS THE OLD VERSION **
+
+
 import javax.swing.JOptionPane;
 // First I will create an object for the Jarvis server to control
 public class Lights {
