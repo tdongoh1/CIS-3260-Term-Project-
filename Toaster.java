@@ -1,69 +1,33 @@
-import java.util.Scanner;
+import java.util.Scanner; 
 
 import javax.swing.JOptionPane;
 
 public class Toaster {
-	Scanner input = new Scanner (System.in);
-	
-	// instance field
-		private int defaultMinutes;
-		private boolean toasterOn;
-		
-		// Constructors
-		// create a new toaster
-		public Toaster () {
-			defaultMinutes = 2;
-			toasterOn = false ;
-		}
-		// Methods
-			
-		public int getDefaultMinutes() {
-			return defaultMinutes ;
-		}
-		
-		public void setDefaultMinutes() {
-			this.defaultMinutes = defaultMinutes ;
-			
-		}
-		
-		public boolean isToaasterOn () {
-			return toasterOn ;
-			
-		}
-	  public void setToasterOn ( boolean toasterOn){
-		  this.toasterOn = toasterOn ;
-		  
-	  }
-	  
-	  // start toaster with default timing 
-	  public void startToaster () {
-		  toasterOn = true ;
-		  System.out.println(" Toasting for " + defaultMinutes + " minutes");
-		  System.out.println(" Toasting is done ! Toasting is done !");
-		  
-		  
-		  
-		  }
-		  
-		  // Start toaster with user input 
-		  
-		  public void startToaster ( int minutes){
-			  minutes = input.nextInt();  
-			  if ( minutes > 1 || minutes < 6 ){
-				  System.out.println(" Toaster is on");
-				  
-			  }
-			  else {
-				  System.out.println(" User inputted time limit is out of bounds."
-				  		+ "Please enter time (in minutes) between 1 -6 "  );
-				  				return; 
-			  }
-	  }
-	  // stop toaster 
-	  public void stopToaster() {
-		  toasterOn = false ;
-		  System.out.println(" Toastering session has ended");
-	  }
-	  
+	public Scanner scan = new Scanner(System.in); 
 
+	public  void toasterPower(String power){
+		if(power.equalsIgnoreCase("on")){
+				
+		String m = (String)JOptionPane.showInputDialog(null,"Please enter a time setting (1-6 minutes)", 
+		"Toaster", JOptionPane.PLAIN_MESSAGE);
+
+		
+		}
+		else if(power.equalsIgnoreCase("off")){
+		   JOptionPane.showMessageDialog(null, "Toaster is off", "Toaster",0);
+		}
+		
+	}
+
+	public void toasterMinutes(int minutes){
+	if(minutes > 1 && minutes < 6){
+		
+			JOptionPane.showMessageDialog(null, "Toaster has been set to " + "Toaster",null, minutes);
+		
+	}
+	else{
+			JOptionPane.showMessageDialog(null, "User inputted time minutes is out of bound. Please enter time between 1-6",
+					"Toaster", JOptionPane.ERROR_MESSAGE);
+	}
+	}
 }
