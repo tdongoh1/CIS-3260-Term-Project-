@@ -38,7 +38,7 @@ if (choice.equalsIgnoreCase("camera")){
 if (choice.equalsIgnoreCase("spotify")){
 	String[] a = {"On", "Off"};
 
-	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Camera", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
+	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Spotify", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
 
 	camera.camPower(power);
 	
@@ -46,7 +46,7 @@ if (choice.equalsIgnoreCase("spotify")){
 if (choice.equalsIgnoreCase("oven")){
 	String[] a = {"On", "Off"};
 
-	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Camera", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
+	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Oven", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
 
 	camera.camPower(power);
 	
@@ -54,7 +54,7 @@ if (choice.equalsIgnoreCase("oven")){
 if (choice.equalsIgnoreCase("toaster")){
 	String[] a = {"On", "Off"};
 
-	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Camera", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
+	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Toaster", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
 
 	camera.camPower(power);
 	
