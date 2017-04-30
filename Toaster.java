@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
 
-import java.util.Scanner ;
 public class Toaster {
 	Scanner input = new Scanner (System.in);
 	
