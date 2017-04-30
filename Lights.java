@@ -29,13 +29,13 @@ public class Lights {
 	
 	public void lightsOn(String whichLights){
 	
-			JOptionPane.showMessageDialog(null, whichLights + "is now on!", "Lights");
+			JOptionPane.showMessageDialog(null, whichLights + "is now on!");
 		}
 	
 	public void lightsOff(String whichLightsOff){
 		
 			
-			JOptionPane.showMessageDialog(null, whichLightsOff + "is now off!", "Lights");
+			JOptionPane.showMessageDialog(null, whichLightsOff + "is now off!");
 	}
 }
 	
