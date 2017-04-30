@@ -7,6 +7,7 @@ public class Jarvis {
 public static void main (String[] args){
 Camera camera = new Camera();
 Lights lights = new Lights();
+Door door = new Door();
 String[] options = {"Lights", "Door", "Camera", "Spotify", "Oven", "Toaster"};
 
 String choice = (String) JOptionPane.showInputDialog(null, "What would you like to use", "Hello!", JOptionPane.QUESTION_MESSAGE, null, options, options[1]);
@@ -20,11 +21,11 @@ if (choice.equalsIgnoreCase("lights")){
 	
 }
 if (choice.equalsIgnoreCase("door")){
-	String[] a = {"On", "Off"};
+	String[] a = {"Unlock", "Lock"};
 
 	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Door", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
 
-	camera.camPower(power);
+	door.doorPower(power);
 	
 }
 

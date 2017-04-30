@@ -1,99 +1,40 @@
+import java.util.Scanner;
 
-import java.util.Scanner ;
 import javax.swing.JOptionPane;
 
-public class Door {
-	private boolean backDoorUnlocked;
 
-    private boolean frontDoorUnlocked;
-    
+public class Door{ 
+private Scanner scan = new Scanner(System.in);
 
+	public void doorPower(String power){
+		if(power.equalsIgnoreCase("Unlock")){
+			String[] b = {"Front Door", "Back Door", "Side Door", "Kitchen Door", "Garage Door"};
 
-// Constructors
+			String doorPower = (String) JOptionPane.showInputDialog(null, "Which door should I unlock? ", "Door", JOptionPane.QUESTION_MESSAGE, null, b, b[1]);
 
-       
-    // Creates a new Doors object.
-    
-    public Door() {
-    	
-    	
-    	
-        frontDoorUnlocked = false;
-        backDoorUnlocked = false;
-        
-        
-        
-    }
+			doorUnlock(doorPower);
+			
+		}
+		else if(power.equalsIgnoreCase("Lock")){
+			
+			String[] b = {"Front Door", "Back Door", "Foyer", "Kitchen", "Garage"};
 
-    // Methods 
-
-    public void setBackDoorUnlocked(boolean backDoorUnlocked) {
-        this.backDoorUnlocked = backDoorUnlocked;
-    }
-
-    public boolean isBackDoorUnlocked() {
-        return backDoorUnlocked;
-    }
-
-    public boolean isFrontDoorUnlocked() {
-        return frontDoorUnlocked;
-    }
-
-    public void setFrontDoorUnlocked(boolean frontDoorUnlocked) {
-        this.frontDoorUnlocked = frontDoorUnlocked;
-    }
-
-    /**
-     * Unlocks front door
-     */
-    public void unlockFrontDoor() {
-        if (frontDoorUnlocked) {
-            System.out.print("Front door is already unlocked");
-            return;
-        }
-        frontDoorUnlocked = true;
-        System.out.println("Front door unlocked");
-    }
-
-    
-       // Locks front door
-  
-    public void lockFrontDoor() {
-        if (!frontDoorUnlocked) {
-            System.out.println("Front door is already locked");
-            return;
-        }
-        frontDoorUnlocked = false;
-        System.out.println("Front door locked");
-    }
-
-    
-     // Unlocks back door
-   
-    public void unlockBackDoor() {
-        if (backDoorUnlocked) {
-            System.out.println("Back door is already unlocked");
-            return;
-        }
-        backDoorUnlocked = true;
-        System.out.println("Back door unlocked");
-    }
-
-    
-     // Locks back door
-     
-    public void lockBackDoor() {
-        if (!backDoorUnlocked) {
-            System.out.println("Back door is already locked");
-            return;
-        }
-        backDoorUnlocked = false;
-        System.out.println("Back door locked");
-        return;
-    }
-
-                       
-        
-
-
+			String doorPowerLock = (String) JOptionPane.showInputDialog(null, "Which door should I lock? ", "Door", JOptionPane.QUESTION_MESSAGE, null, b, b[1]);
+			
+	
+			doorLock(doorPowerLock);	
+		}
+	 
+		}
+	
+	public void doorUnlock(String whichDoor){
+	
+			JOptionPane.showMessageDialog(null, whichDoor + " is now unlocked!");
+		}
+	
+	public void doorLock(String whichDoorLock){
+		
+			
+			JOptionPane.showMessageDialog(null, whichDoorLock + " is now locked!");
+	}
 }
