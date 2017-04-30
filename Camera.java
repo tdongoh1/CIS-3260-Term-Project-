@@ -8,7 +8,7 @@ private Scanner scan = new Scanner(System.in);
 
 	public void camPower(String power){
 		if(power.equalsIgnoreCase("Turn a camera on")){
-			String[] b = {"Front Door", "Back Door", "Foyer", "Kitchen", "Garage"};
+			String[] b = {"All Cameras", "Front Door", "Back Door", "Foyer", "Kitchen", "Garage"};
 
 			String camPower = (String) JOptionPane.showInputDialog(null, "Which camera should I turn on", "Camera", JOptionPane.QUESTION_MESSAGE, null, b, b[1]);
 
@@ -17,7 +17,7 @@ private Scanner scan = new Scanner(System.in);
 		}
 		else if(power.equalsIgnoreCase("Turn a camera Off")){
 			
-			String[] b = {"Front Door", "Back Door", "Foyer", "Kitchen", "Garage"};
+			String[] b = {"All Cameras", "Front Door", "Back Door", "Foyer", "Kitchen", "Garage"};
 
 			String camPowerOff = (String) JOptionPane.showInputDialog(null, "Which camera should I turn off", "Camera", JOptionPane.QUESTION_MESSAGE, null, b, b[1]);
 			
