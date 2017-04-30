@@ -5,21 +5,22 @@ import javax.swing.JOptionPane;
 
 public class Jarvis {
 public static void main (String[] args){
-Camera camera = new Camera();	
+Camera camera = new Camera();
+Lights lights = new Lights();
 String[] options = {"Lights", "Door", "Camera", "Spotify", "Oven", "Toaster"};
 
 String choice = (String) JOptionPane.showInputDialog(null, "What would you like to use", "Hello!", JOptionPane.QUESTION_MESSAGE, null, options, options[1]);
 
 if (choice.equalsIgnoreCase("lights")){
-	String[] v = {"On", "Off"};
+	String[] a = {"On", "Off"};
 
 	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Lights", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
 
-	camera.camPower(power);
+	lights.lightsPower(power);
 	
 }
 if (choice.equalsIgnoreCase("door")){
-	String[] u = {"On", "Off"};
+	String[] a = {"On", "Off"};
 
 	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Door", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
 
@@ -36,23 +37,23 @@ if (choice.equalsIgnoreCase("camera")){
 	
 }
 if (choice.equalsIgnoreCase("spotify")){
-	String[] x = {"On", "Off"};
+	String[] a = {"On", "Off"};
 
-	String power = (String) JOptionPane.showInputDialog(null, "What would you like to search", "Spotify", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
+	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Spotify", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
 
 	camera.camPower(power);
 	
 }
 if (choice.equalsIgnoreCase("oven")){
-	String[] y = {"On", "Off"};
+	String[] a = {"On", "Off"};
 
-	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Oven", JOptionPane.QUESTION_MESSAGE, null, y, y[1]);
+	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Oven", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
 
-	oven.ovenPower(power);
+	camera.camPower(power);
 	
 }
 if (choice.equalsIgnoreCase("toaster")){
-	String[] z = {"On", "Off"};
+	String[] a = {"On", "Off"};
 
 	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Toaster", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
 
@@ -61,5 +62,3 @@ if (choice.equalsIgnoreCase("toaster")){
 }
 }
 }
-
-
