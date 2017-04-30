@@ -1,5 +1,6 @@
 
 import java.util.Scanner ;
+import javax.swing.JOptionPane;
 
 public class Door {
 	private boolean backDoorUnlocked;
