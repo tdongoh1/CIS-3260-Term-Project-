@@ -18,7 +18,7 @@ public  void therPower(String power){
 
 	setting(t);
 	}
-	else if(power.equalsIgnoreCase("turn off thermostat")){
+	else if(power.equalsIgnoreCase("turn off the thermostat")){
 	   JOptionPane.showMessageDialog(null, "The thermostat is off!", "Thermostat");
 	}
 	
