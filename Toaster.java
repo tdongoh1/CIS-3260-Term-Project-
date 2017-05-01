@@ -22,7 +22,7 @@ public class Toaster {
 	public void toasterMinutes(int minutes){
 	if(minutes > 1 && minutes < 6){
 		
-			JOptionPane.showMessageDialog(null, "Toaster has been set to " + "Toaster",null, minutes);
+			JOptionPane.showMessageDialog(null, "Toaster has been set to " + minutes, "Toaster",null);
 		
 	}
 	else{
