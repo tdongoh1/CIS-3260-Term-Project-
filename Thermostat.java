@@ -26,7 +26,7 @@ public  void therPower(String power){
 
 public void setting(int t){
 if(t>50 && t<90){
-		JOptionPane.showMessageDialog(null, "Thermostat has been set to" + temp +"°F", "Thermostat");
+		JOptionPane.showMessageDialog(null, "Thermostat has been set to" + t +"°F", "Thermostat");
 	
 }
 else{
