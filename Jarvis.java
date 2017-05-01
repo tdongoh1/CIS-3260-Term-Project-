@@ -43,9 +43,9 @@ if (choice.equalsIgnoreCase("camera")){
 }
 if (choice.equalsIgnoreCase("spotify")){
 	
- 	String[] x = {"Genres", "Artists", "Songs", "Playlists"};
+ 	String[] searches = {"Genres", "Artists", "Songs", "Playlists"};
  
- 	String search = (String) JOptionPane.showInputDialog(null, "What would you like to search", "Spotify", JOptionPane.QUESTION_MESSAGE, null, x, x[1]);
+ 	String search = (String) JOptionPane.showInputDialog(null, "What would you like to search", "Spotify", JOptionPane.QUESTION_MESSAGE, null, searches, searches[1]);
  
  	spotify.doSearch(search);
 	
