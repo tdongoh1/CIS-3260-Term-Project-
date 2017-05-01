@@ -8,8 +8,8 @@ public Scanner scan = new Scanner(System.in);
 public  void ovenPower(String power){
 	if(power.equalsIgnoreCase("on")){
 			
-	String t = (String)JOptionPane.showInputDialog(null,"Please select a temperature setting (200-450°F)", 
-	"Oven", JOptionPane.PLAIN_MESSAGE);
+	int t = Integer.parseInt(JOptionPane.showInputDialog(null,"Please select a temperature setting (200-450°F)", 
+	"Oven", JOptionPane.PLAIN_MESSAGE));
 
 	ovenTemp(t);
 
