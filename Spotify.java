@@ -21,13 +21,13 @@ public void doSearch(String search){
 	 	"Spotify", JOptionPane.QUESTION_MESSAGE);
 		JOptionPane.showMessageDialog(null, "Ok,"+ artist +"'s top hits are now playing!");
 		}
-	else if(genre.equalsIgnoreCase("songs"))
+	else if(search.equalsIgnoreCase("songs"))
 		{
 		String song = (String)JOptionPane.showInputDialog(null,"Which song would you like to search for", 
 	 	"Spotify", JOptionPane.QUESTION_MESSAGE);
 		JOptionPane.showMessageDialog(null, "Ok,"+ song +" is now playing!");
 		}
-	else if(genre.equalsIgnoreCase("Playlists"))
+	else if(search.equalsIgnoreCase("Playlists"))
 		{
 		String[] g = {"Current Favorites", "Happy Songs", "Workout Track", "Sad :(", "2015", "Dance"};
 
