@@ -6,7 +6,7 @@ public class Thermostat {
 public  void therPower(String power){
 	if(power.equalsIgnoreCase("Cooling") || power.equalsIgnoreCase("Heating")){
 			
-	int t = Integer.parseInt(JOptionPane.showInputDialog(null,"What would you like me to set the temperature to?", 
+	int temp = Integer.parseInt(JOptionPane.showInputDialog(null,"What would you like me to set the temperature to?", 
 		"Thermostat", JOptionPane.PLAIN_MESSAGE));
 	setting(temp);
   }
