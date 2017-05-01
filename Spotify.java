@@ -10,7 +10,7 @@ public void doSearch(String search){
 		{
 		String[] genresChoices = {"Pop", "Rock", "Alternative", "Country", "Hip Hop"};
 
-		String gen = (String) JOptionPane.showInputDialog(null, "Select a genre", "Spotify", JOptionPane.PLAIN_MESSAGE, null, genreChoices, genreChoices[1]);
+		String gen = (String) JOptionPane.showInputDialog(null, "Select a genre", "Spotify", JOptionPane.PLAIN_MESSAGE, null, genresChoices, genresChoices[1]);
 			 
 		JOptionPane.showMessageDialog(null, "Ok,"+ gen +" Station is playing!");
 				
