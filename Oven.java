@@ -22,10 +22,10 @@ public  void ovenPower(String power){
 
 public void ovenTemp(int temp){
 if(temp>200&& temp<450){
-		JOptionPane.showMessageDialog(null, "Oven has been set to " + "°F", "Oven" );
+		JOptionPane.showMessageDialog(null, "Oven has been set to " + "°F");
 	
 }
 else{
-		JOptionPane.showMessageDialog(null, "Temperature setting must be 200-450°F!", "Oven", JOptionPane.ERROR_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Temperature setting must be 200-450°F!");
 }
 }}
