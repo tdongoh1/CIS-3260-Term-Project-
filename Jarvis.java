@@ -1,43 +1,75 @@
-// Class for spotify
-
-import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class Spotify {
-	private Scanner scan = new Scanner(System.in);
+// This will be our "controller" for our various objects
+
+
+public class Jarvis {
+public static void main (String[] args){
+Lights lights = new Lights();
+Door door = new Door();
+Camera camera = new Camera();
+Spotify spotify = new Spotify();
+Thermostat thermostat = new Thermostat();
+Oven oven = new Oven();
+Toaster toaster = new Toaster();
+String[] options = {"Lights", "Door", "Camera", "Spotify", "Oven", "Toaster"};
+
+String choice = (String) JOptionPane.showInputDialog(null, "What can I help you with", "Hello!", JOptionPane.QUESTION_MESSAGE, null, options, options[1]);
+
+if (choice.equalsIgnoreCase("lights")){
+	String[] a = {"On", "Off"};
+
+	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Lights", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
+
+	lights.lightsPower(power);
 	
-public void doSearch(String search){
-	String genre = " ";
-	if(search.equalsIgnoreCase("genres"))
-		{
-		String[] x = {"Pop", "Rock", "Alternative", "Country", "Hip Hop"};
+}
+if (choice.equalsIgnoreCase("door")){
+	String[] a = {"Unlock", "Lock"};
 
-		String gen = (String) JOptionPane.showInputDialog(null, "Select a genre", "Spotify", JOptionPane.PLAIN_MESSAGE, null, x, x[1]);
-			 
-		JOptionPane.showMessageDialog(null, "Ok,"+ gen +" Station is playing!");
-				
-		}
-	else if(search.equalsIgnoreCase("artists"))
-		{
-		String artist = (String)JOptionPane.showInputDialog(null,"Which artist would you like to search for", 
-	 	"Spotify", JOptionPane.QUESTION_MESSAGE);
-		JOptionPane.showMessageDialog(null, "Ok,"+ artist +"'s top hits are now playing!","Spotify",0);
-		}
-	else if(genre.equalsIgnoreCase("songs"))
-		{
-		String song = (String)JOptionPane.showInputDialog(null,"Which song would you like to search for", 
-	 	"Spotify", JOptionPane.QUESTION_MESSAGE);
-		JOptionPane.showMessageDialog(null, "Ok,"+ song +" is now playing!");
-		}
-	else if(genre.equalsIgnoreCase("Playlists"))
-		{
-		String[] g = {"Current Favorites", "Happy Songs", "Workout Track", "Sad :(", "2015", "Dance"};
+	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Door", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
 
-		String play = (String) JOptionPane.showInputDialog(null, "Select a playlist", "Spotify", JOptionPane.PLAIN_MESSAGE, null, g, g[1]);
-
-		JOptionPane.showMessageDialog(null, "Ok,"+ play +"  is now playing!", "Soptify",0);
-				
-		}
+	door.doorPower(power);
 	
-		}
-	}
+}
+
+if (choice.equalsIgnoreCase("camera")){
+	String[] a = {"turn camera on", "turn camera off"};
+
+	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Camera", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
+
+	camera.camPower(power);
+	
+}
+if (choice.equalsIgnoreCase("spotify")){
+	
+ 	String[] searches = {"Genres", "Artists", "Songs", "Playlists"};
+ 
+ 	String search = (String) JOptionPane.showInputDialog(null, "What would you like to search", "Spotify", JOptionPane.QUESTION_MESSAGE, null, searches, searches[1]);
+ 
+ 	spotify.doSearch(search);
+	
+}
+if (choice.equalsIgnoreCase("oven")){
+	String[] a = {"turn the oven on", "turn the oven off"};
+
+	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Oven", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
+}
+
+if (choice.equalsIgnoreCase("thermostat")){
+	String[] a = {"heating", "cooling", "turn off the thermostat"};
+	
+	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Thermostat", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
+	
+	thermostat.therPower(power);
+}
+if (choice.equalsIgnoreCase("toaster")){
+	String[] a = {"On", "Off"};
+
+	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Toaster", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
+
+	toaster.toasterPower(power);
+	
+}
+}
+}
