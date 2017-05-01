@@ -22,12 +22,11 @@ public class Toaster {
 	public void toasterMinutes(int minutes){
 	if(minutes > 1 && minutes < 6){
 		
-			JOptionPane.showMessageDialog(null, "Toaster has been set to " + minutes, "Toaster",null);
+			JOptionPane.showMessageDialog(null, "Toaster has been set to " + minutes);
 		
 	}
 	else{
-			JOptionPane.showMessageDialog(null, "User inputted time minutes is out of bound. Please enter time between 1-6",
-					"Toaster", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, "User inputted time minutes is out of bound. Please enter time between 1-6");
 	}
 	}
 }
