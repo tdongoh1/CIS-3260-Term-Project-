@@ -6,15 +6,15 @@ public class Thermostat {
 public  void therPower(String power){
 	if(power.equalsIgnoreCase("Cooling")){
 			
-	String t = (String)JOptionPane.showInputDialog(null,"Set a temperature for the AC (°F)", 
-	"Thermostat", JOptionPane.PLAIN_MESSAGE);
+	int t = Integer.parseInt(JOptionPane.showInputDialog(null,"Set a temperature for the AC (°F)", 
+	"Thermostat", JOptionPane.PLAIN_MESSAGE));
 
 	setting(t);
   }
 	else if(power.equalsIgnoreCase("Heating")){
 			
-	String t = (String)JOptionPane.showInputDialog(null,"Set a temperature for the heater (°F)"), 
-	"Thermostat", JOptionPane.PLAIN_MESSAGE);
+	int t = Integer.parseInt(JOptionPane.showInputDialog(null,"Set a temperature for the heater (°F)"), 
+	"Thermostat", JOptionPane.PLAIN_MESSAGE));
 
 	setting(t);
 	}
