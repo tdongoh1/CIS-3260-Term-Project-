@@ -34,7 +34,7 @@ if (choice.equalsIgnoreCase("door")){
 }
 
 if (choice.equalsIgnoreCase("camera")){
-	String[] a = {"turn camera on", "turn camera off"};
+	String[] a = {"turn a camera on", "turn a camera off"};
 
 	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Camera", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
 
