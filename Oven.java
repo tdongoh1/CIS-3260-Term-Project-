@@ -11,7 +11,7 @@ public  void ovenPower(String power){
 	String t = (String)JOptionPane.showInputDialog(null,"Please select a temperature setting (200-450°F)", 
 	"Oven", JOptionPane.PLAIN_MESSAGE);
 
-
+	ovenTemp(t);
 
 	}
 	else if(power.equalsIgnoreCase("off")){
