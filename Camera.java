@@ -29,12 +29,12 @@ private Scanner scan = new Scanner(System.in);
 	
 	public void camOn(String whichCam){
 	
-			System.out.println(whichCam + " now on!" );
+			JOptionPane.showMessageDialog(null, whichCam + " now on!", "Camera" );
 		}
 	
 	public void camOff(String whichCamOff){
 		
-				System.out.println(whichCamOff + " now off!");
+			JOptionPane.showMessageDialog(null, whichCamOff + " now off!", "Camera" );
 	}
 }
 
