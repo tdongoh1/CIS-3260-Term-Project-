@@ -4,20 +4,14 @@ import javax.swing.JOptionPane;
 public class Thermostat {
 
 public  void therPower(String power){
-	if(power.equalsIgnoreCase("Cooling")){
+	if(power.equalsIgnoreCase("Cooling") || power.equalsIgnoreCase("Heating")){
 			
-	int temp = Integer.parseInt(JOptionPane.showInputDialog(null,"Set a temperature for the AC (°F)", 
-	"Thermostat", JOptionPane.PLAIN_MESSAGE));
-
+	int t = Integer.parseInt(JOptionPane.showInputDialog(null,"What would you like me to set the temperature to?", 
+		"Thermostat", JOptionPane.PLAIN_MESSAGE));
 	setting(temp);
   }
-	else if(power.equalsIgnoreCase("Heating")){
-			
-	int heat = Integer.parseInt(JOptionPane.showInputDialog(null,"Set a temperature for the heater (°F)"), 
-	"Thermostat", JOptionPane.PLAIN_MESSAGE));
 
-	setting(heat);
-	}
+
 	else if(power.equalsIgnoreCase("turn off the thermostat")){
 	   JOptionPane.showMessageDialog(null, "The thermostat is off!");
 	}
