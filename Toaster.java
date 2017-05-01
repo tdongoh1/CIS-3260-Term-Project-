@@ -8,7 +8,7 @@ public class Toaster {
 	public  void toasterPower(String power){
 		if(power.equalsIgnoreCase("on")){
 				
-		String m = (String)JOptionPane.showInputDialog(null,"Please enter a time setting (1-6 minutes)", 
+		int m = (int)JOptionPane.showInputDialog(null,"Please enter a time setting (1-6 minutes)", 
 		"Toaster", JOptionPane.PLAIN_MESSAGE);
 		toasterMinutes(m);
 		
