@@ -12,7 +12,7 @@ Spotify spotify = new Spotify();
 Thermostat thermostat = new Thermostat();
 Oven oven = new Oven();
 Toaster toaster = new Toaster();
-String[] options = {"Lights", "Door", "Camera", "Spotify", "Oven", "Toaster"};
+String[] options = {"Lights", "Door", "Camera", "Thermostat" "Spotify", "Oven", "Toaster"};
 
 String choice = (String) JOptionPane.showInputDialog(null, "What can I help you with", "Hello!", JOptionPane.QUESTION_MESSAGE, null, options, options[1]);
 
