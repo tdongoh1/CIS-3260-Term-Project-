@@ -5,12 +5,16 @@ import javax.swing.JOptionPane;
 
 public class Jarvis {
 public static void main (String[] args){
-Camera camera = new Camera();
 Lights lights = new Lights();
-Door door = new Door();
+Door door = new door();
+Camera camera = new Camera();
+Spotify spotify = new Spotify();
+Thermostat thermostat = new Thermostat();
+Oven oven = new Oven();
+Toaster toaster = new Toaster();
 String[] options = {"Lights", "Door", "Camera", "Spotify", "Oven", "Toaster"};
 
-String choice = (String) JOptionPane.showInputDialog(null, "What would you like to use", "Hello!", JOptionPane.QUESTION_MESSAGE, null, options, options[1]);
+String choice = (String) JOptionPane.showInputDialog(null, "What can I help you with", "Hello!", JOptionPane.QUESTION_MESSAGE, null, options, options[1]);
 
 if (choice.equalsIgnoreCase("lights")){
 	String[] a = {"On", "Off"};
@@ -38,11 +42,12 @@ if (choice.equalsIgnoreCase("camera")){
 	
 }
 if (choice.equalsIgnoreCase("spotify")){
-	String[] a = {"On", "Off"};
-
-	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Spotify", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
-
-	camera.camPower(power);
+	
+ 	String[] x = {"Genres", "Artists", "Songs", "Playlists"};
+ 
+ 	String search = (String) JOptionPane.showInputDialog(null, "What would you like to search", "Spotify", JOptionPane.QUESTION_MESSAGE, null, x, x[1]);
+ 
+ 	spotify.doSearch(search);
 	
 }
 if (choice.equalsIgnoreCase("oven")){
@@ -50,7 +55,7 @@ if (choice.equalsIgnoreCase("oven")){
 
 	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Oven", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
 
-	camera.camPower(power);
+	thermostat.therPower(power);
 	
 }
 if (choice.equalsIgnoreCase("toaster")){
@@ -58,7 +63,7 @@ if (choice.equalsIgnoreCase("toaster")){
 
 	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Toaster", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
 
-	camera.camPower(power);
+	toaster.camPower(power);
 	
 }
 }
