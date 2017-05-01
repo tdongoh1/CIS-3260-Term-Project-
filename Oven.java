@@ -6,7 +6,7 @@ public class Oven{
 public Scanner scan = new Scanner(System.in); 
 
 public  void ovenPower(String power){
-	if(power.equalsIgnoreCase("on")){
+	if(power.equalsIgnoreCase("turn the oven on")){
 			
 	int t = Integer.parseInt(JOptionPane.showInputDialog(null,"Please select a temperature setting (200-450°F)", 
 	"Oven", JOptionPane.PLAIN_MESSAGE));
@@ -14,7 +14,7 @@ public  void ovenPower(String power){
 	ovenTemp(t);
 
 	}
-	else if(power.equalsIgnoreCase("off")){
+	else if(power.equalsIgnoreCase("turn the oven off")){
 	   JOptionPane.showMessageDialog(null, "Oven is off", "Oven");
 	}
 	
