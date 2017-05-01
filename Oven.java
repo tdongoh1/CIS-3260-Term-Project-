@@ -22,7 +22,7 @@ public  void ovenPower(String power){
 
 public void ovenTemp(int temp){
 if(temp>200&& temp<450){
-		JOptionPane.showMessageDialog(null, "Oven has been set to " + "°F");
+		JOptionPane.showMessageDialog(null, "Oven has been set to " + temp + "°F");
 	
 }
 else{
