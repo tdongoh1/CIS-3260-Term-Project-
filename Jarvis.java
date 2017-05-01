@@ -54,7 +54,7 @@ if (choice.equalsIgnoreCase("oven")){
 	String[] a = {"turn the oven on", "turn the oven off"};
 
 	String power = (String) JOptionPane.showInputDialog(null, "What would you like to do", "Oven", JOptionPane.QUESTION_MESSAGE, null, a, a[1]);
-	oven.overPower(power);
+	oven.ovenPower(power);
 }
 
 if (choice.equalsIgnoreCase("thermostat")){
