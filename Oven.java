@@ -15,14 +15,14 @@ public  void ovenPower(String power){
 
 	}
 	else if(power.equalsIgnoreCase("off")){
-	   JOptionPane.showMessageDialog(null, "Oven is off");
+	   JOptionPane.showMessageDialog(null, "Oven is off", "Oven");
 	}
 	
 }
 
 public void ovenTemp(int temp){
 if(temp>200&& temp<450){
-		JOptionPane.showMessageDialog(null, "Oven has been set to " + "°F", "Oven", temp);
+		JOptionPane.showMessageDialog(null, "Oven has been set to " + "°F", "Oven" );
 	
 }
 else{
