@@ -12,20 +12,20 @@ public void doSearch(String search){
 
 		String gen = (String) JOptionPane.showInputDialog(null, "Select a genre", "Spotify", JOptionPane.PLAIN_MESSAGE, null, genresChoices, genresChoices[1]);
 			 
-		JOptionPane.showMessageDialog(null, "Ok,"+ gen +" Station is playing!");
+		JOptionPane.showMessageDialog(null, "Ok, "+ gen +" Station is playing!");
 				
 		}
 	else if(search.equalsIgnoreCase("artists"))
 		{
 		String artist = (String)JOptionPane.showInputDialog(null,"Which artist would you like to search for", 
 	 	"Spotify", JOptionPane.QUESTION_MESSAGE);
-		JOptionPane.showMessageDialog(null, "Ok,"+ artist +"'s top hits are now playing!");
+		JOptionPane.showMessageDialog(null, "Ok, "+ artist +"'s top hits are now playing!");
 		}
 	else if(search.equalsIgnoreCase("songs"))
 		{
 		String song = (String)JOptionPane.showInputDialog(null,"Which song would you like to search for", 
 	 	"Spotify", JOptionPane.QUESTION_MESSAGE);
-		JOptionPane.showMessageDialog(null, "Ok,"+ song +" is now playing!");
+		JOptionPane.showMessageDialog(null, "Ok, "+ song +" is now playing!");
 		}
 	else if(search.equalsIgnoreCase("Playlists"))
 		{
@@ -33,7 +33,7 @@ public void doSearch(String search){
 
 		String play = (String) JOptionPane.showInputDialog(null, "Select a playlist", "Spotify", JOptionPane.PLAIN_MESSAGE, null, g, g[1]);
 
-		JOptionPane.showMessageDialog(null, "Ok,"+ play +"  is now playing!");
+		JOptionPane.showMessageDialog(null, "Ok, "+ play +"  is now playing!");
 				
 		}
 	
